@@ -19,11 +19,9 @@ else()
 
 endif()
 
-install(DIRECTORY meshes/
-  DESTINATION share/${PROJECT_NAME}/meshes
-)
-
-install(DIRECTORY urdf/
-  DESTINATION share/${PROJECT_NAME}/urdf
+install(DIRECTORY 
+  meshes
+  urdf
+  DESTINATION share/${PROJECT_NAME}/
 )
 
